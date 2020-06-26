@@ -49,3 +49,6 @@
 -keepclassmembers class * implements android.os.Parcelable {
     static ** CREATOR;
 }
+-keepclassmembers,allowobfuscation class * {
+  @com.google.gson.annotations.SerializedName <fields>;
+}
